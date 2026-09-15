@@ -8,8 +8,8 @@ Built for **Assignment 5** of the ITM Skills University Flutter course.
 
 | | |
 |---|---|
-| **Student** | Sayuj Pillai |
-| **Roll number** | 150096724107 |
+| **Student** | Disha Rao |
+| **Email** | 2024.dishar@isu.ac.in |
 | **Stack** | Flutter · Node.js/Express · Firestore · Cloudinary |
 
 ---

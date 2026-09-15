@@ -277,8 +277,8 @@ void main() {
         'examId': 'e1',
         'examTitle': 'Midterm',
         'studentId': 's1',
-        'studentName': 'Sayuj Pillai',
-        'studentEmail': 'sayuj@example.com',
+        'studentName': 'Disha Rao',
+        'studentEmail': 'disha@example.com',
         'status': 'submitted',
         'autoSubmitted': true,
         'score': 17.5,
@@ -301,8 +301,8 @@ void main() {
       final row = AttemptRow.fromJson({
         'attemptId': 'a1',
         'studentId': 's1',
-        'studentName': 'Sayuj Pillai',
-        'studentEmail': 'sayuj@example.com',
+        'studentName': 'Disha Rao',
+        'studentEmail': 'disha@example.com',
         'status': 'in_progress',
         'autoSubmitted': false,
       });
@@ -316,12 +316,12 @@ void main() {
   group('AppUser', () {
     test('initials come from the first two words', () {
       expect(
-        const AppUser(id: '1', name: 'Sayuj Pillai', email: 'a@b.c', role: 'student').initials,
-        'SP',
+        const AppUser(id: '1', name: 'Disha Rao', email: 'a@b.c', role: 'student').initials,
+        'DR',
       );
       expect(
-        const AppUser(id: '1', name: 'Sayuj', email: 'a@b.c', role: 'student').initials,
-        'S',
+        const AppUser(id: '1', name: 'Disha', email: 'a@b.c', role: 'student').initials,
+        'D',
       );
       expect(
         const AppUser(id: '1', name: '  ', email: 'a@b.c', role: 'student').initials,
@@ -356,14 +356,14 @@ void main() {
           'highestScore': 30,
           'lowestScore': 12.5,
           'passPercentage': 50,
-          'topper': {'studentName': 'Sayuj Pillai', 'score': 30},
+          'topper': {'studentName': 'Disha Rao', 'score': 30},
         },
         'rows': [
           {
             'attemptId': 'a1',
             'studentId': 's1',
-            'studentName': 'Sayuj Pillai',
-            'studentEmail': 'sayuj@example.com',
+            'studentName': 'Disha Rao',
+            'studentEmail': 'disha@example.com',
             'status': 'submitted',
             'autoSubmitted': false,
             'score': 30,
@@ -374,11 +374,11 @@ void main() {
 
       expect(report.examTitle, 'Midterm');
       expect(report.summary.studentsAttempted, 3);
-      expect(report.summary.topperName, 'Sayuj Pillai');
+      expect(report.summary.topperName, 'Disha Rao');
       expect(report.summary.topperScore, 30);
       expect(report.summary.passPercentage, 50);
       expect(report.rows, hasLength(1));
-      expect(report.rows.single.studentName, 'Sayuj Pillai');
+      expect(report.rows.single.studentName, 'Disha Rao');
     });
 
     test('an exam nobody has sat reports empty aggregates, not zeros', () {
