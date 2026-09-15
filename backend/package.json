@@ -1,0 +1,36 @@
+{
+  "name": "mcq-exam-portal-backend",
+  "version": "1.0.0",
+  "description": "REST API for the MCQ Exam Portal - Express + Firestore + Cloudinary",
+  "main": "server.js",
+  "type": "commonjs",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node src/utils/seed.js",
+    "test": "node test/run-all.js",
+    "smoke": "node test/api.smoke.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.5.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "xlsx": "^0.18.5"
+  },
+  "keywords": [
+    "mcq",
+    "exam-portal",
+    "express",
+    "firestore"
+  ],
+  "license": "MIT"
+}

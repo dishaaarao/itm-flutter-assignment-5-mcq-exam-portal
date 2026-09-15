@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Firebase service account keys and credentials
+*serviceAccountKey*.json
+*.pem
+
+# Uploaded files (local storage backend)
+uploads/
+!uploads/.gitkeep
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
